@@ -24,7 +24,11 @@ header h1 a { color: #eee; text-decoration: none; }
 
 body { background: #efefef; color: #444; }
 
-section.intro { margin-top: 25px; }
-section.intro .description { line-height: 45px; font-family: 'Source Sans Pro', sans-serif; font-size: 2.5em; width: 57.62712%; float: left; margin-right: 1.69492%; display: inline; }
-section.intro .description img.buy { width: 85.29412%; float: right; margin-right: 0; #margin-left: -1em; display: inline; }
+section.intro { width: 100%; float: right; margin-right: 0; #margin-left: -1em; display: inline; margin-top: 25px; }
+section.intro .description { width: 57.62712%; float: left; margin-right: 1.69492%; display: inline; line-height: 45px; font-family: 'Source Sans Pro', sans-serif; font-size: 2.5em; }
+section.intro .description img.buy { width: 70.58824%; float: left; margin-right: 2.94118%; display: inline; test-align: center; }
 section.intro .preview-img { width: 40.67797%; float: right; margin-right: 0; #margin-left: -1em; display: inline; }
+
+section.features .feature-img { width: 57.62712%; float: left; margin-right: 1.69492%; display: inline; }
+section.features .feature-list { width: 40.67797%; float: right; margin-right: 0; #margin-left: -1em; display: inline; font-family: 'Source Sans Pro', sans-serif; font-size: 1.5em; }
+section.features .feature-list li { margin-bottom: 20px; }

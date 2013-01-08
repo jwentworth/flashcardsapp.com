@@ -34,18 +34,34 @@ body{
 }
 
 section.intro{
+    @include span-columns(12 omega, 12);
     margin-top:25px;
     .description{
+        @include span-columns(7, 12);
         line-height:45px;
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 2.5em;
-        @include span-columns(7, 12);
 
         img.buy{
-            @include span-columns(6 omega, 7);
+            @include span-columns(5, 7);
+            test-align:center;
         }
     }
     .preview-img{
         @include span-columns(5 omega, 12);
+    }
+}
+
+section.features{
+    .feature-img{
+        @include span-columns(7, 12);
+    }
+    .feature-list{
+        @include span-columns(5 omega, 12);
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1.5em;
+        li{
+            margin-bottom:20px;
+        }
     }
 }
