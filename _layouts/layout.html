@@ -4,13 +4,17 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="author" content="Your Name" />
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro|Armata' rel='stylesheet' type='text/css'>
     <title>{{ page.title }}</title>
   </head>
   <body>
     <header>
-      <h1><a href="/">{{ page.title }}</a></h1>
+        <div class="container">
+            <h1><a href="/">Flashcards App</a></h1>
+        </div>
     </header>
-    <section>
+    <section class="container">
       {{ content }}
     </section>
   </body>
