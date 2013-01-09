@@ -28,7 +28,10 @@ header { -webkit-box-shadow: inset 0 -18px 15px -15px rgba(0, 0, 0, 0.2); -moz-b
 header h1 { font-family: 'Armata', sans-serif; font-size: 1.5em; }
 @media (min-width: 59em) { header h1 { font-size: 2em; } }
 header h1 a { color: #eee; text-decoration: none; }
-header .red5 { float: right; }
+header h1 .red5logo { font-size: .75em; float: right; }
+header h1 .red5logo .darkgray { color: #747276; }
+header h1 .red5logo .red { color: #be1711; }
+header h1 .red5logo .gray { color: #8d8f90; }
 
 section.intro { width: 100%; float: right; margin-right: 0; #margin-left: -1em; display: inline; margin-top: 25px; border-bottom: 1px solid #ccc; }
 section.intro .description { width: 100%; float: right; margin-right: 0; #margin-left: -1em; display: inline; line-height: 35px; font-size: 1.5em; }
@@ -50,3 +53,5 @@ section.features .study-img { width: 100%; float: right; margin-right: 0; #margi
 @media (min-width: 59em) { section.features .study-img { width: 49.15254%; float: right; margin-right: 0; } }
 
 footer { width: 100%; float: right; margin-right: 0; #margin-left: -1em; display: inline; margin: 20px; text-align: center; color: #aaa; }
+footer section.logo { margin-top: 10px; font-size: 2em; }
+footer section.logo .red { text-decoration: none; color: #8f110d; }

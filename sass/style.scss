@@ -6,6 +6,10 @@ $grid-padding: 1em; // and 1em padding on the grid container
 
 $full: 12;
 
+$red: #8F110D;
+$darkgray: #414042;
+$gray: #737577;
+
 @import "susy";
 @import "compass/reset";
 @import "compass/css3";
@@ -45,9 +49,19 @@ header {
             color: #eee;
             text-decoration: none;
         }
-    }
-    .red5{
-        float: right;
+        .red5logo{
+            font-size: .75em;
+            float: right;
+            .darkgray{
+                color: lighten($darkgray, 20%);
+            }
+            .red{
+                color: lighten($red, 10%);
+            }
+            .gray{
+                color: lighten($gray, 10%);
+            }
+        }
     }
 }
 
@@ -125,4 +139,13 @@ footer{
     margin: 20px;
     text-align: center;
     color: #aaa;
+
+    section.logo{
+        margin-top: 10px;
+        font-size: 2em;
+        .red{
+            text-decoration: none;
+            color: $red;
+        }
+    }
 }
