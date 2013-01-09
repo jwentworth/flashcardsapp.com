@@ -1,10 +1,10 @@
 // Setting up the Magic Grid
-$total-columns: 12; // 12 columns
+$total-columns: 7; // 12 columns
 $column-width: 4em; // columns are 4em wide
 $gutter-width: 1em; // with 1em gutters
 $grid-padding: 1em; // and 1em padding on the grid container
 
-$phone: 7 36em;
+$full: 12;
 
 @import "susy";
 @import "compass/reset";
@@ -12,7 +12,7 @@ $phone: 7 36em;
 
 .container {
     @include container;
-    @include at-breakpoint($phone) {
+    @include at-breakpoint($full) {
       @include container;
     }
 }
@@ -50,12 +50,14 @@ section.intro{
     margin-top:25px;
     border-bottom: 1px solid #ccc;
     .description{
-        @include span-columns(7, 12);
-        @include at-breakpoint($phone) {
-            @include span-columns(7 omega, 7);
+        @include span-columns(7 omega, 7);
+        line-height:35px;
+        font-size: 2em;
+        @include at-breakpoint($full) {
+            @include span-columns(7, 12);
+            line-height:45px;
+            font-size: 2.5em;
         }
-        line-height:45px;
-        font-size: 2.5em;
 
         .buy-link{
             @include prefix(1, 7);
@@ -70,9 +72,9 @@ section.intro{
         }
     }
     .preview-img{
-        @include span-columns(5 omega, 12);
-        @include at-breakpoint($phone) {
-            @include span-columns(7 omega, 7);
+        @include span-columns(7 omega, 7);
+        @include at-breakpoint($full) {
+            @include span-columns(5 omega, 12);
         }
     }
 }
@@ -86,28 +88,28 @@ section.features{
         margin-bottom:20px;
     }
     .feature-img{
-        @include span-columns(6, 12);
-        @include at-breakpoint($phone) {
-            @include span-columns(7 omega, 7);
+        @include span-columns(7 omega, 7);
+        @include at-breakpoint($full) {
+            @include span-columns(6, 12);
         }
     }
     .feature-list{
-        @include span-columns(6 omega, 12);
-        @include at-breakpoint($phone) {
-            @include span-columns(7 omega, 7);
+        @include span-columns(7 omega, 7);
+        @include at-breakpoint($full) {
+            @include span-columns(6 omega, 12);
         }
     }
     .feature-list-cont{
-        @include span-columns(6, 12);
-        @include at-breakpoint($phone) {
-            @include span-columns(7 omega, 7);
+        @include span-columns(7 omega, 7);
+        @include at-breakpoint($full) {
+            @include span-columns(6, 12);
         }
         margin-top:20px;
     }
     .study-img{
-        @include span-columns(6 omega, 12);
-        @include at-breakpoint($phone) {
-            @include span-columns(7 omega, 7);
+        @include span-columns(7 omega, 7);
+        @include at-breakpoint($full) {
+            @include span-columns(6 omega, 12);
         }
     }
 }
