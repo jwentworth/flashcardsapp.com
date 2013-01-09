@@ -52,7 +52,7 @@ section.intro{
     .description{
         @include span-columns(7 omega, 7);
         line-height:35px;
-        font-size: 2em;
+        font-size: 1.5em;
         @include at-breakpoint($full) {
             @include span-columns(7, 12);
             line-height:45px;

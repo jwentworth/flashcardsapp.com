@@ -29,7 +29,7 @@ header h1 { font-family: 'Armata', sans-serif; font-size: 2em; }
 header h1 a { color: #eee; text-decoration: none; }
 
 section.intro { width: 100%; float: right; margin-right: 0; #margin-left: -1em; display: inline; margin-top: 25px; border-bottom: 1px solid #ccc; }
-section.intro .description { width: 100%; float: right; margin-right: 0; #margin-left: -1em; display: inline; line-height: 35px; font-size: 2em; }
+section.intro .description { width: 100%; float: right; margin-right: 0; #margin-left: -1em; display: inline; line-height: 35px; font-size: 1.5em; }
 @media (min-width: 59em) { section.intro .description { width: 57.62712%; float: left; margin-right: 1.69492%; line-height: 45px; font-size: 2.5em; } }
 section.intro .description .buy-link { padding-left: 14.70588%; padding-right: 14.70588%; width: 70.58824%; float: right; margin-right: 0; #margin-left: -1em; display: inline; margin-top: 20px; text-align: center; font-size: .7em; }
 section.intro .description .buy-link img { width: 100%; }
