@@ -48,6 +48,7 @@ header {
 section.intro{
     @include span-columns(12 omega, 12);
     margin-top:25px;
+    border-bottom: 1px solid #ccc;
     .description{
         @include span-columns(7, 12);
         @include at-breakpoint($phone) {
@@ -78,8 +79,9 @@ section.intro{
 
 section.features{
     @include span-columns(12 omega, 12);
-    margin-top:30px;
+    padding:30px 0;
     font-size: 1.5em;
+    border-bottom: 1px solid #ccc;
     li{
         margin-bottom:20px;
     }
