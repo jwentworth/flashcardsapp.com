@@ -59,6 +59,7 @@ header {
         }
         a.site-link{
             color: #222;
+            font-weight: bold;
             @include text-shadow(0px 2px 2px #666);
         }
         a{
