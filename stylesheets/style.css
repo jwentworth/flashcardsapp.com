@@ -27,6 +27,7 @@ body { background: #efefef; color: #444; font-family: 'Source Sans Pro', sans-se
 header { -webkit-box-shadow: inset 0 -18px 15px -15px rgba(0, 0, 0, 0.2); -moz-box-shadow: inset 0 -18px 15px -15px rgba(0, 0, 0, 0.2); box-shadow: inset 0 -18px 15px -15px rgba(0, 0, 0, 0.2); width: 100%; height: 30px; border: 1px solid black; padding: 10px; background: #444; color: white; }
 header h1 { font-family: 'Armata', sans-serif; font-size: 2em; }
 header h1 a { color: #eee; text-decoration: none; }
+header .red5 { float: right; }
 
 section.intro { width: 100%; float: right; margin-right: 0; #margin-left: -1em; display: inline; margin-top: 25px; border-bottom: 1px solid #ccc; }
 section.intro .description { width: 100%; float: right; margin-right: 0; #margin-left: -1em; display: inline; line-height: 35px; font-size: 1.5em; }
