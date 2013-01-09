@@ -17,18 +17,34 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 .container { *zoom: 1; max-width: 59em; _width: 59em; padding-left: 1em; padding-right: 1em; margin-left: auto; margin-right: auto; }
 .container:after { content: ""; display: table; clear: both; }
+@media (max-width: 36em) { .container { max-width: 34em; padding-left: 1em; padding-right: 1em; margin-left: auto; margin-right: auto; }
+  .container:after { content: ""; display: table; clear: both; } }
 
-header { width: 100%; height: 30px; border: 1px solid black; padding: 10px; background: #444; -webkit-box-shadow: inset 0 -18px 15px -15px rgba(0, 0, 0, 0.2); -moz-box-shadow: inset 0 -18px 15px -15px rgba(0, 0, 0, 0.2); box-shadow: inset 0 -18px 15px -15px rgba(0, 0, 0, 0.2); color: white; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body { background: #efefef; color: #444; font-family: 'Source Sans Pro', sans-serif; }
+
+header { -webkit-box-shadow: inset 0 -18px 15px -15px rgba(0, 0, 0, 0.2); -moz-box-shadow: inset 0 -18px 15px -15px rgba(0, 0, 0, 0.2); box-shadow: inset 0 -18px 15px -15px rgba(0, 0, 0, 0.2); width: 100%; height: 30px; border: 1px solid black; padding: 10px; background: #444; color: white; }
 header h1 { font-family: 'Armata', sans-serif; font-size: 2em; }
 header h1 a { color: #eee; text-decoration: none; }
 
-body { background: #efefef; color: #444; }
-
 section.intro { width: 100%; float: right; margin-right: 0; #margin-left: -1em; display: inline; margin-top: 25px; }
-section.intro .description { width: 57.62712%; float: left; margin-right: 1.69492%; display: inline; line-height: 45px; font-family: 'Source Sans Pro', sans-serif; font-size: 2.5em; }
-section.intro .description img.buy { width: 70.58824%; float: left; margin-right: 2.94118%; display: inline; test-align: center; }
+section.intro .description { width: 57.62712%; float: left; margin-right: 1.69492%; display: inline; line-height: 45px; font-size: 2.5em; }
+@media (max-width: 36em) { section.intro .description { width: 100%; float: right; margin-right: 0; } }
+section.intro .description .buy-link { padding-left: 14.70588%; padding-right: 14.70588%; width: 70.58824%; float: right; margin-right: 0; #margin-left: -1em; display: inline; margin-top: 20px; text-align: center; font-size: .7em; }
+section.intro .description .buy-link img { width: 100%; }
 section.intro .preview-img { width: 40.67797%; float: right; margin-right: 0; #margin-left: -1em; display: inline; }
+@media (max-width: 36em) { section.intro .preview-img { width: 100%; float: right; margin-right: 0; } }
 
-section.features .feature-img { width: 57.62712%; float: left; margin-right: 1.69492%; display: inline; }
-section.features .feature-list { width: 40.67797%; float: right; margin-right: 0; #margin-left: -1em; display: inline; font-family: 'Source Sans Pro', sans-serif; font-size: 1.5em; }
-section.features .feature-list li { margin-bottom: 20px; }
+section.features { width: 100%; float: right; margin-right: 0; #margin-left: -1em; display: inline; margin-top: 30px; font-size: 1.5em; }
+section.features li { margin-bottom: 20px; }
+section.features .feature-img { width: 49.15254%; float: left; margin-right: 1.69492%; display: inline; }
+@media (max-width: 36em) { section.features .feature-img { width: 100%; float: right; margin-right: 0; } }
+section.features .feature-list { width: 49.15254%; float: right; margin-right: 0; #margin-left: -1em; display: inline; }
+@media (max-width: 36em) { section.features .feature-list { width: 100%; float: right; margin-right: 0; } }
+section.features .feature-list-cont { width: 49.15254%; float: left; margin-right: 1.69492%; display: inline; margin-top: 20px; }
+@media (max-width: 36em) { section.features .feature-list-cont { width: 100%; float: right; margin-right: 0; } }
+section.features .study-img { width: 49.15254%; float: right; margin-right: 0; #margin-left: -1em; display: inline; }
+@media (max-width: 36em) { section.features .study-img { width: 100%; float: right; margin-right: 0; } }
+
+footer { width: 100%; float: right; margin-right: 0; #margin-left: -1em; display: inline; margin: 20px; text-align: center; color: #aaa; }
