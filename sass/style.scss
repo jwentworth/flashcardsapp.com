@@ -150,16 +150,22 @@ section.features{
     }
 }
 
+section.support{
+    @include span-columns(12 omega, 12);
+    margin-top:20px;
+    text-align:center;
+}
+
 footer{
     @include span-columns(12 omega, 12);
     margin: 20px;
     text-align: center;
     color: #aaa;
 
-    section.logo{
+    div.logo{
         margin-top: 10px;
         font-size: 2em;
-        .red{
+        a.red{
             text-decoration: none;
             color: $red;
         }

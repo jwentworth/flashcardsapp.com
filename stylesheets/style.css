@@ -56,6 +56,8 @@ section.features .feature-list-cont { width: 100%; float: right; margin-right: 0
 section.features .study-img { width: 100%; float: right; margin-right: 0; #margin-left: -1em; display: inline; }
 @media (min-width: 59em) { section.features .study-img { width: 49.15254%; float: right; margin-right: 0; } }
 
+section.support { width: 100%; float: right; margin-right: 0; #margin-left: -1em; display: inline; margin-top: 20px; text-align: center; }
+
 footer { width: 100%; float: right; margin-right: 0; #margin-left: -1em; display: inline; margin: 20px; text-align: center; color: #aaa; }
-footer section.logo { margin-top: 10px; font-size: 2em; }
-footer section.logo .red { text-decoration: none; color: #8f110d; }
+footer div.logo { margin-top: 10px; font-size: 2em; }
+footer div.logo a.red { text-decoration: none; color: #8f110d; }
