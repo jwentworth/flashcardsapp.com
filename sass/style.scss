@@ -1,9 +1,10 @@
 // Setting up the Magic Grid
-$total-columns: 7; // 12 columns
+$total-columns: 4; // 12 columns
 $column-width: 4em; // columns are 4em wide
 $gutter-width: 1em; // with 1em gutters
 $grid-padding: 1em; // and 1em padding on the grid container
 
+$tablet: 8;
 $full: 12;
 
 $red: #8F110D;
@@ -15,10 +16,7 @@ $gray: #737577;
 @import "compass/css3";
 
 .container {
-    @include container;
-    @include at-breakpoint($full) {
-      @include container;
-    }
+    @include container(4, $tablet, $full);
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -82,13 +80,18 @@ header {
 }
 
 section.intro{
-    @include span-columns(12 omega, 12);
+    @include span-columns(1 omega, 1);
     margin-top:25px;
     border-bottom: 1px solid #ccc;
     .description{
-        @include span-columns(7 omega, 7);
+        @include span-columns(1 omega, 1);
         line-height:35px;
         font-size: 1.5em;
+        @include at-breakpoint($tablet){
+            @include span-columns(5, 8);
+            line-height:40px;
+            font-size: 2em;
+        }
         @include at-breakpoint($full) {
             @include span-columns(7, 12);
             line-height:45px;
@@ -96,9 +99,17 @@ section.intro{
         }
 
         .buy-link{
-            @include prefix(1, 7);
-            @include suffix(1, 7);
-            @include span-columns(5 omega, 7);
+            @include span-columns(4 omega, 4);
+            @include at-breakpoint($tablet){
+                @include prefix(1, 8);
+                @include suffix(1, 8);
+                @include span-columns(6 omega, 8);
+            }
+            @include at-breakpoint($full){
+                @include prefix(2, 12);
+                @include suffix(2, 12);
+                @include span-columns(8 omega, 12);
+            }
             margin-top: 20px;
             text-align:center;
             font-size:.7em;
@@ -109,6 +120,9 @@ section.intro{
     }
     .preview-img{
         @include span-columns(7 omega, 7);
+        @include at-breakpoint($tablet){
+            @include span-columns(3 omega, 8);
+        }
         @include at-breakpoint($full) {
             @include span-columns(5 omega, 12);
         }
@@ -116,7 +130,7 @@ section.intro{
 }
 
 section.features{
-    @include span-columns(12 omega, 12);
+    @include span-columns(1 omega, 1);
     padding:30px 0;
     font-size: 1.5em;
     border-bottom: 1px solid #ccc;
@@ -124,28 +138,53 @@ section.features{
         margin-bottom:20px;
     }
     .feature-img{
-        @include span-columns(7 omega, 7);
+        @include span-columns(4 omega, 4);
+        @include at-breakpoint($tablet){
+            @include span-columns(3, 8);
+        }
         @include at-breakpoint($full) {
-            @include span-columns(6, 12);
+            @include span-columns(5, 12);
         }
     }
     .feature-list{
-        @include span-columns(7 omega, 7);
+        @include span-columns(4 omega, 4);
+        @include at-breakpoint($tablet){
+            @include span-columns(5 omega, 8);
+        }
         @include at-breakpoint($full) {
-            @include span-columns(6 omega, 12);
+            @include span-columns(7 omega, 12);
         }
     }
-    .feature-list-cont{
-        @include span-columns(7 omega, 7);
+}
+
+section.course-hero{
+    @include span-columns(12 omega, 12);
+    padding:30px 0;
+    font-size: 1.5em;
+    border-bottom: 1px solid #ccc;
+    li{
+        margin-bottom:20px;
+    }
+    .feature-list{
+        @include span-columns(4 omega, 4);
+        @include at-breakpoint($tablet){
+            @include span-columns(5, 8);
+        }
         @include at-breakpoint($full) {
-            @include span-columns(6, 12);
+            @include span-columns(8, 12);
         }
         margin-top:20px;
     }
-    .study-img{
+    .course-hero-logo{
         @include span-columns(7 omega, 7);
+        @include at-breakpoint($tablet){
+            @include span-columns(3 omega, 8);
+        }
         @include at-breakpoint($full) {
-            @include span-columns(6 omega, 12);
+            @include span-columns(4 omega, 12);
+        }
+        img{
+            width: 100%;
         }
     }
 }
@@ -158,8 +197,8 @@ section.support{
 
 footer{
     @include span-columns(12 omega, 12);
-    margin: 20px;
     text-align: center;
+    margin: 20px;
     color: #aaa;
 
     div.logo{

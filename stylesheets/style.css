@@ -15,10 +15,10 @@ a img { border: none; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
 
-.container { *zoom: 1; max-width: 34em; _width: 34em; padding-left: 1em; padding-right: 1em; margin-left: auto; margin-right: auto; }
+.container { *zoom: 1; max-width: 19em; _width: 19em; padding-left: 1em; padding-right: 1em; margin-left: auto; margin-right: auto; }
 .container:after { content: ""; display: table; clear: both; }
-@media (min-width: 59em) { .container { max-width: 59em; padding-left: 1em; padding-right: 1em; margin-left: auto; margin-right: auto; }
-  .container:after { content: ""; display: table; clear: both; } }
+@media (min-width: 39em) { .container { max-width: 39em; } }
+@media (min-width: 59em) { .container { max-width: 59em; } }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 
@@ -39,25 +39,37 @@ header h1 .red5logo .gray { color: #8d8f90; }
 
 section.intro { width: 100%; float: right; margin-right: 0; #margin-left: -1em; display: inline; margin-top: 25px; border-bottom: 1px solid #ccc; }
 section.intro .description { width: 100%; float: right; margin-right: 0; #margin-left: -1em; display: inline; line-height: 35px; font-size: 1.5em; }
+@media (min-width: 39em) { section.intro .description { width: 61.53846%; float: left; margin-right: 2.5641%; line-height: 40px; font-size: 2em; } }
 @media (min-width: 59em) { section.intro .description { width: 57.62712%; float: left; margin-right: 1.69492%; line-height: 45px; font-size: 2.5em; } }
-section.intro .description .buy-link { padding-left: 14.70588%; padding-right: 14.70588%; width: 70.58824%; float: right; margin-right: 0; #margin-left: -1em; display: inline; margin-top: 20px; text-align: center; font-size: .7em; }
+section.intro .description .buy-link { width: 100%; float: right; margin-right: 0; #margin-left: -1em; display: inline; margin-top: 20px; text-align: center; font-size: .7em; }
+@media (min-width: 39em) { section.intro .description .buy-link { padding-left: 12.82051%; padding-right: 12.82051%; width: 74.35897%; float: right; margin-right: 0; } }
+@media (min-width: 59em) { section.intro .description .buy-link { padding-left: 16.94915%; padding-right: 16.94915%; width: 66.10169%; float: right; margin-right: 0; } }
 section.intro .description .buy-link img { width: 100%; }
 section.intro .preview-img { width: 100%; float: right; margin-right: 0; #margin-left: -1em; display: inline; }
+@media (min-width: 39em) { section.intro .preview-img { width: 35.89744%; float: right; margin-right: 0; } }
 @media (min-width: 59em) { section.intro .preview-img { width: 40.67797%; float: right; margin-right: 0; } }
 
 section.features { width: 100%; float: right; margin-right: 0; #margin-left: -1em; display: inline; padding: 30px 0; font-size: 1.5em; border-bottom: 1px solid #ccc; }
 section.features li { margin-bottom: 20px; }
 section.features .feature-img { width: 100%; float: right; margin-right: 0; #margin-left: -1em; display: inline; }
-@media (min-width: 59em) { section.features .feature-img { width: 49.15254%; float: left; margin-right: 1.69492%; } }
+@media (min-width: 39em) { section.features .feature-img { width: 35.89744%; float: left; margin-right: 2.5641%; } }
+@media (min-width: 59em) { section.features .feature-img { width: 40.67797%; float: left; margin-right: 1.69492%; } }
 section.features .feature-list { width: 100%; float: right; margin-right: 0; #margin-left: -1em; display: inline; }
-@media (min-width: 59em) { section.features .feature-list { width: 49.15254%; float: right; margin-right: 0; } }
-section.features .feature-list-cont { width: 100%; float: right; margin-right: 0; #margin-left: -1em; display: inline; margin-top: 20px; }
-@media (min-width: 59em) { section.features .feature-list-cont { width: 49.15254%; float: left; margin-right: 1.69492%; } }
-section.features .study-img { width: 100%; float: right; margin-right: 0; #margin-left: -1em; display: inline; }
-@media (min-width: 59em) { section.features .study-img { width: 49.15254%; float: right; margin-right: 0; } }
+@media (min-width: 39em) { section.features .feature-list { width: 61.53846%; float: right; margin-right: 0; } }
+@media (min-width: 59em) { section.features .feature-list { width: 57.62712%; float: right; margin-right: 0; } }
+
+section.course-hero { width: 100%; float: right; margin-right: 0; #margin-left: -1em; display: inline; padding: 30px 0; font-size: 1.5em; border-bottom: 1px solid #ccc; }
+section.course-hero li { margin-bottom: 20px; }
+section.course-hero .feature-list { width: 100%; float: right; margin-right: 0; #margin-left: -1em; display: inline; margin-top: 20px; }
+@media (min-width: 39em) { section.course-hero .feature-list { width: 61.53846%; float: left; margin-right: 2.5641%; } }
+@media (min-width: 59em) { section.course-hero .feature-list { width: 66.10169%; float: left; margin-right: 1.69492%; } }
+section.course-hero .course-hero-logo { width: 100%; float: right; margin-right: 0; #margin-left: -1em; display: inline; }
+@media (min-width: 39em) { section.course-hero .course-hero-logo { width: 35.89744%; float: right; margin-right: 0; } }
+@media (min-width: 59em) { section.course-hero .course-hero-logo { width: 32.20339%; float: right; margin-right: 0; } }
+section.course-hero .course-hero-logo img { width: 100%; }
 
 section.support { width: 100%; float: right; margin-right: 0; #margin-left: -1em; display: inline; margin-top: 20px; text-align: center; }
 
-footer { width: 100%; float: right; margin-right: 0; #margin-left: -1em; display: inline; margin: 20px; text-align: center; color: #aaa; }
+footer { width: 100%; float: right; margin-right: 0; #margin-left: -1em; display: inline; text-align: center; margin: 20px; color: #aaa; }
 footer div.logo { margin-top: 10px; font-size: 2em; }
 footer div.logo a.red { text-decoration: none; color: #8f110d; }
