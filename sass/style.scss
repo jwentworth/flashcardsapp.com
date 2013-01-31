@@ -15,7 +15,7 @@ $gray: #737577;
 @import "compass/reset";
 @import "compass/css3";
 
-.container {
+.container, #disqus_thread {
     @include container(4, $tablet, $full);
 }
 
@@ -40,6 +40,21 @@ body{
     @include text-shadow(0px -1px 1px #222);
     @include at-breakpoint($full) {
         font-size: 2.5em;
+    }
+}
+
+nav {
+    width:100%;
+    background: #353535;
+    @include text-shadow(0px 2px 2px #666);
+    padding: .25em;
+    li{
+        float: left;
+        margin-left: 1em;
+    }
+    a{
+        color: #fefefe;
+        text-decoration: none;
     }
 }
 

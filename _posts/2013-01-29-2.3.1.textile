@@ -1,0 +1,9 @@
+---
+layout: post
+title: 2.3.1 Update
+tag: update
+---
+
+* Fix issue with iPad display blank screen
+* Set default color/background for all cards, including "Flashcard" image background
+* Improved performance of Course Hero Flashcard syncing.
